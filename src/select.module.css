@@ -17,6 +17,9 @@
 
 .value {
     flex-grow: 1;
+    display: flex;
+    gap: .5em;
+    flex-wrap: wrap;
 }
 
 .clear-btn {
@@ -68,15 +71,16 @@
 }
 
 option {
-    padding: .25rem;
+    padding: .25em .5em;
     cursor: pointer;
-}
-
-.option.highlighted {
-    background-color: hsl(200, 100%, 50%);
-    color: white;
 }
 
 .option.selected {
     background-color: hsl(200, 100%, 70%);
 }
+
+.option.highLighted {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+}
+
